@@ -1,0 +1,30 @@
+{
+  "name": "crud",
+  "version": "0.0.1",
+  "description": "a simple app of node.js to read delete and update",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YangShuting/CRUD-project.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "yangshuting",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YangShuting/CRUD-project/issues"
+  },
+  "homepage": "https://github.com/YangShuting/CRUD-project#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongodb": "^2.2.24"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

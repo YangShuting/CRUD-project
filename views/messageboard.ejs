@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="utf-8">
+	<title>Message Board</title>
+</head>
+<body>
+<ul>
+	<% for(var i=0; i<quote.length; i++) {%>
+    <li class="quote">
+      <span><%= quote[i].name %></span>
+      <span><%= quote[i].quote %></span>
+    </li>
+  <% } %>
+</ul>
+
+<p>Please enter your name and quote:</p>
+<form action="/quote" method="POST">
+	<input type="text" name="name">
+	<input type="text" name="quote">
+	<button type="submit">Submit</button>
+</form>
+
+<div>
+	<h2>Replace last quote written by master yoda with a quote written by Mary.</h2>
+	<button id="update">Mary invades</button>	
+</div>
+<div>
+	<h2>Delete Mary's first quote!</h2>
+	<button id="deleteQuote">Delete the first Mary's quote.</button>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
+
